@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Interview Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Practice your interview skills with real-time feedback and dynamic questions.">
+</head>
+<body>
+    <div id="home-screen" class="screen active home-layout">
+        <div class="hero-content glass-card" style="max-width: 800px; width: 100%; border: none; background: transparent; box-shadow: none;">
+            <h1 class="main-title">AI-BASED INTERVIEW EVALUATION SYSTEM</h1>
+            <p class="subtitle">AI-driven intelligent interview evaluation for smarter hiring decisions</p>
+            <button id="get-started-btn" class="primary-btn hero-btn">Get Started</button>
+        </div>
+    </div>
+
+    <div id="register-screen" class="screen hidden">
+        <div class="glass-card">
+            <h1>Register</h1>
+            <p>Please enter your details to begin the AI interview evaluation step.</p>
+            <form id="register-form" class="register-form">
+                <div class="form-group">
+                    <input type="text" id="candidate-name" class="input-field" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="candidate-password" class="input-field" placeholder="Password" required>
+                </div>
+                <button type="submit" class="primary-btn" style="width: 100%; margin-top: 10px;">Register & Proceed</button>
+                <div style="margin-top: 15px; font-size: 0.9rem;">
+                    <a href="#" id="go-to-login" style="color: var(--accent-color); text-decoration: none;">Already have an account? Login here</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="login-screen" class="screen hidden">
+        <div class="glass-card">
+            <h1>Login</h1>
+            <p>Welcome back! Enter your credentials to proceed.</p>
+            <form id="login-form" class="register-form">
+                <div class="form-group">
+                    <input type="text" id="login-name" class="input-field" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="login-password" class="input-field" placeholder="Password" required>
+                </div>
+                <button type="submit" class="primary-btn" style="width: 100%; margin-top: 10px;">Login & Proceed</button>
+                <div style="margin-top: 15px; font-size: 0.9rem;">
+                    <a href="#" id="go-to-register" style="color: var(--accent-color); text-decoration: none;">Don't have an account? Register here</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="welcome-screen" class="screen hidden">
+        <div class="glass-card">
+            <h1>AI Interview Platform</h1>
+            <p>Practice your interview skills with real-time feedback. You will be evaluated based on your answers.</p>
+            <button id="start-btn" class="primary-btn">Start Interview</button>
+        </div>
+    </div>
+
+    <div id="interview-screen" class="screen hidden">
+        <div class="video-container">
+            <video id="user-video" autoplay muted playsinline></video>
+            <div class="recording-indicator" id="recording-indicator">
+                <span class="dot"></span> Recording Answer
+            </div>
+        </div>
+        <div class="interview-panel glass-card">
+            <div class="question-header">
+                <div>Question <span id="question-number">1</span> of <span id="total-questions">X</span></div>
+                <div class="timer-display" id="timer-display">02:00</div>
+            </div>
+            <h2 id="question-text">Loading question...</h2>
+            <div class="answer-section">
+                <textarea id="answer-text" placeholder="Speak your answer or type it here..."></textarea>
+                <div class="controls">
+                    <button id="record-btn" class="secondary-btn">🎤 Start Answering</button>
+                    <button id="next-btn" class="primary-btn" disabled>Next Question</button>
+                </div>
+                <div id="feedback-msg" class="feedback"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="result-screen" class="screen hidden">
+        <div class="glass-card result-card" style="max-width: 800px; width: 100%;">
+            <h1 id="result-title">Interview Completed</h1>
+            <div id="result-status" class="status-badge"></div>
+            <p id="result-details">Calculating results...</p>
+            
+            <div id="video-feedback-report" style="text-align: left; margin: 20px 0; display: none;">
+                <h2 style="font-size: 1.2rem; margin-bottom: 10px; text-align: center; color: var(--text-primary);">Video Interview Playback & Analytics</h2>
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
+                    <video id="playback-video" controls style="max-width: 100%; border-radius: 8px; border: 1px solid rgba(255,255,255,0.2);"></video>
+                    <div id="video-metrics" style="display: flex; gap: 20px; font-size: 1rem; color: var(--text-secondary); width: 100%; justify-content: space-around;">
+                        <!-- Metrics injected here -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="analytics-reports" style="text-align: left; margin: 20px 0; display: none; background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px;">
+                <h3 style="margin-bottom: 15px; text-align: center;">Performance Breakdown</h3>
+                <div id="grammar-report" style="margin-bottom: 15px;"></div>
+                <div id="facial-report"></div>
+            </div>
+
+            <div id="feedback-report" style="text-align: left; margin: 30px 0; max-height: 400px; overflow-y: auto; display: none; padding-right: 10px;">
+                <h2 style="font-size: 1.2rem; margin-bottom: 20px; text-align: center; color: var(--text-primary);">Detailed Feedback & Suggestions</h2>
+                <div id="feedback-list" class="feedback-list">
+                    <!-- Feedback items will be injected here -->
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 15px; justify-content: center; margin-top: 15px;">
+                <button id="restart-btn" class="primary-btn">Try Again</button>
+                <button id="logout-btn" class="secondary-btn">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="logout-screen" class="screen hidden">
+        <div class="glass-card">
+            <h1>Logged Out</h1>
+            <p>You have successfully logged out from the AI Interview Platform.</p>
+            <button id="login-again-btn" class="primary-btn" style="width: 100%; margin-top: 20px;">Login Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

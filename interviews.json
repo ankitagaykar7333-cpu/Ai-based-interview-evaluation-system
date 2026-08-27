@@ -1,0 +1,377 @@
+[
+  {
+    "candidateName": "nisha",
+    "score": 0,
+    "total": 3,
+    "hired": false,
+    "timestamp": "2026-03-28T07:27:14.738Z"
+  },
+  {
+    "candidateName": "nisha",
+    "score": 1,
+    "total": 10,
+    "hired": true,
+    "timestamp": "2026-03-28T07:35:56.497Z"
+  },
+  {
+    "candidateName": "nisha",
+    "score": 2,
+    "total": 10,
+    "hired": true,
+    "timestamp": "2026-03-28T07:41:31.315Z"
+  },
+  {
+    "candidateName": "nisha",
+    "score": 0,
+    "total": 10,
+    "hired": false,
+    "timestamp": "2026-03-28T07:45:55.747Z"
+  },
+  {
+    "candidateName": "nisha",
+    "score": 4,
+    "total": 10,
+    "hired": false,
+    "timestamp": "2026-03-28T07:50:52.482Z"
+  },
+  {
+    "candidateName": "nisha",
+    "score": 6,
+    "total": 10,
+    "hired": true,
+    "timestamp": "2026-03-28T07:57:37.811Z"
+  },
+  {
+    "candidateName": "nisha",
+    "score": 0,
+    "total": 10,
+    "hired": false,
+    "timestamp": "2026-03-28T08:28:29.961Z"
+  },
+  {
+    "candidateName": "neha",
+    "score": 1,
+    "total": 10,
+    "hired": false,
+    "userId": 1,
+    "timestamp": "2026-03-28T09:55:14.797Z"
+  },
+  {
+    "candidateName": "neha",
+    "score": 0,
+    "total": 10,
+    "hired": false,
+    "userId": 1,
+    "timestamp": "2026-03-30T12:30:12.925Z"
+  },
+  {
+    "candidateName": "neha",
+    "score": 0,
+    "total": 10,
+    "hired": false,
+    "userId": 1,
+    "timestamp": "2026-03-30T15:43:50.936Z"
+  },
+  {
+    "candidateName": "neha",
+    "score": 0,
+    "total": 10,
+    "hired": false,
+    "userId": 1,
+    "timestamp": "2026-03-30T15:59:33.066Z"
+  },
+  {
+    "candidateName": "neha",
+    "score": 6,
+    "total": 10,
+    "hired": true,
+    "userId": 1,
+    "timestamp": "2026-03-30T16:05:42.734Z"
+  },
+  {
+    "candidateName": "nikita",
+    "score": 0,
+    "total": 10,
+    "hired": false,
+    "userId": 1,
+    "timestamp": "2026-03-31T05:59:40.095Z"
+  },
+  {
+    "candidateName": "poonam",
+    "score": 0,
+    "total": 10,
+    "hired": false,
+    "userId": 1,
+    "timestamp": "2026-04-18T06:22:17.881Z"
+  },
+  {
+    "candidateName": "poonam",
+    "score": 0,
+    "total": 10,
+    "hired": false,
+    "userId": 1,
+    "timestamp": "2026-04-18T06:25:56.856Z"
+  },
+  {
+    "candidateName": "poonam",
+    "score": 7,
+    "total": 10,
+    "hired": true,
+    "userId": 1,
+    "timestamp": "2026-04-18T06:29:11.282Z"
+  },
+  {
+    "candidateName": "poonam",
+    "score": 6,
+    "total": 10,
+    "hired": true,
+    "userId": 1,
+    "timestamp": "2026-04-18T06:34:48.465Z"
+  },
+  {
+    "candidateName": "poonam",
+    "score": 1,
+    "total": 10,
+    "hired": false,
+    "userId": 1,
+    "timestamp": "2026-04-18T06:37:26.122Z"
+  },
+  {
+    "candidateName": "poonam",
+    "score": 0,
+    "total": 10,
+    "hired": false,
+    "userId": 1,
+    "timestamp": "2026-04-18T06:45:19.468Z"
+  },
+  {
+    "candidateName": "poonam",
+    "score": 0,
+    "total": 10,
+    "hired": false,
+    "userId": 1,
+    "timestamp": "2026-04-18T06:45:56.227Z"
+  },
+  {
+    "candidateName": "poonam",
+    "score": 3,
+    "total": 10,
+    "hired": false,
+    "userId": 1,
+    "timestamp": "2026-04-18T06:51:18.900Z"
+  },
+  {
+    "candidateName": "poonam",
+    "score": 1,
+    "total": 10,
+    "hired": false,
+    "userId": 1,
+    "timestamp": "2026-04-18T06:55:43.810Z"
+  },
+  {
+    "candidateName": "poonam",
+    "score": 2,
+    "total": 10,
+    "hired": false,
+    "userId": 1,
+    "timestamp": "2026-04-18T06:59:02.592Z"
+  },
+  {
+    "candidateName": "poonam",
+    "score": 0,
+    "total": 10,
+    "hired": false,
+    "userId": 1,
+    "timestamp": "2026-04-18T07:03:47.905Z"
+  },
+  {
+    "candidateName": "poonam",
+    "score": 0,
+    "total": 10,
+    "hired": false,
+    "userId": 1,
+    "timestamp": "2026-04-18T07:08:23.910Z"
+  },
+  {
+    "candidateName": "atharva",
+    "score": 0,
+    "total": 10,
+    "hired": false,
+    "userId": 2,
+    "timestamp": "2026-04-18T07:16:54.154Z"
+  },
+  {
+    "candidateName": "poonam",
+    "score": 0,
+    "total": 10,
+    "hired": false,
+    "status": "LOGGED IN",
+    "userId": 1,
+    "timestamp": "2026-04-18T07:21:40.134Z"
+  },
+  {
+    "candidateName": "poonam",
+    "score": 0,
+    "total": 10,
+    "hired": false,
+    "userId": 1,
+    "timestamp": "2026-04-18T07:22:27.954Z"
+  },
+  {
+    "candidateName": "mansi",
+    "score": 1,
+    "total": 10,
+    "hired": false,
+    "userId": 1,
+    "id": "1776524872276",
+    "timestamp": "2026-04-18T15:07:52.277Z",
+    "answers": [
+      {
+        "question": "Introduce yourself",
+        "answer": "Hi, I am Mansi. I have 2 years of experience with Node.js and React.",
+        "isCorrect": true,
+        "feedback": "Good technical understanding demonstrated."
+      },
+      {
+        "question": "Why do you want to switch?",
+        "answer": "Idk.",
+        "isCorrect": false,
+        "feedback": "Answer lacked sufficient technical depth."
+      }
+    ]
+  },
+  {
+    "candidateName": "sakshi",
+    "score": 0,
+    "total": 10,
+    "hired": false,
+    "userId": 1,
+    "answers": [],
+    "id": "1776581201624",
+    "timestamp": "2026-04-19T06:46:41.624Z"
+  },
+  {
+    "candidateName": "sakshi",
+    "score": 0,
+    "total": 10,
+    "hired": false,
+    "userId": 1,
+    "answers": [
+      {
+        "question": "Introduce yourself",
+        "answer": "ewrgthyju",
+        "isCorrect": false,
+        "feedback": "Answer lacked sufficient technical depth."
+      },
+      {
+        "question": "Why do you want to work here?",
+        "answer": "(No answer provided)",
+        "isCorrect": false,
+        "feedback": "Answer lacked sufficient technical depth."
+      }
+    ],
+    "id": "1776581540374",
+    "timestamp": "2026-04-19T06:52:20.374Z"
+  },
+  {
+    "candidateName": "sakshi",
+    "score": 0,
+    "total": 10,
+    "hired": false,
+    "userId": 1,
+    "answers": [],
+    "id": "1776581727361",
+    "timestamp": "2026-04-19T06:55:27.393Z"
+  },
+  {
+    "candidateName": "sakshi",
+    "score": 0,
+    "total": 10,
+    "hired": false,
+    "userId": 1,
+    "answers": [],
+    "id": "1776581790560",
+    "timestamp": "2026-04-19T06:56:30.560Z"
+  },
+  {
+    "candidateName": "sakshi",
+    "score": 0,
+    "total": 10,
+    "hired": false,
+    "userId": 1,
+    "answers": [],
+    "id": "1776581846146",
+    "timestamp": "2026-04-19T06:57:26.146Z"
+  },
+  {
+    "candidateName": "pradnya",
+    "score": 1,
+    "total": 10,
+    "hired": false,
+    "userId": 1,
+    "answers": [
+      {
+        "question": "Introduce yourself",
+        "answer": "hello  good morning my name is Nisha ",
+        "isCorrect": true,
+        "feedback": "Good technical understanding demonstrated."
+      },
+      {
+        "question": "Why do you want to work here?",
+        "answer": "gfdgyu",
+        "isCorrect": false,
+        "feedback": "Answer lacked sufficient technical depth."
+      },
+      {
+        "question": "What are your strengths?",
+        "answer": "xftfyhijo",
+        "isCorrect": false,
+        "feedback": "Answer lacked sufficient technical depth."
+      },
+      {
+        "question": "What are your weaknesses?",
+        "answer": "dtfyguhi",
+        "isCorrect": false,
+        "feedback": "Answer lacked sufficient technical depth."
+      },
+      {
+        "question": "Why should we hire you?",
+        "answer": "dfghj",
+        "isCorrect": false,
+        "feedback": "Answer lacked sufficient technical depth."
+      },
+      {
+        "question": "Where do you see yourself in 5 years?",
+        "answer": "fghjk",
+        "isCorrect": false,
+        "feedback": "Answer lacked sufficient technical depth."
+      },
+      {
+        "question": "Tell me about a challenge you faced at work",
+        "answer": "dfghi",
+        "isCorrect": false,
+        "feedback": "Answer lacked sufficient technical depth."
+      },
+      {
+        "question": "Why did you leave your last job? / Why do you want to switch?",
+        "answer": "werytruy",
+        "isCorrect": false,
+        "feedback": "Answer lacked sufficient technical depth."
+      },
+      {
+        "question": "How do you handle stress or pressure?",
+        "answer": "wretyui",
+        "isCorrect": false,
+        "feedback": "Answer lacked sufficient technical depth."
+      },
+      {
+        "question": "Do you have any questions for us?",
+        "answer": "wdergthy",
+        "isCorrect": false,
+        "feedback": "Answer lacked sufficient technical depth."
+      }
+    ],
+    "id": "1776655132481",
+    "timestamp": "2026-04-20T03:18:52.482Z"
+  }
+]

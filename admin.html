@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Admin Interface | AI Interview</title>
+    <link rel="stylesheet" href="admin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Animated Background Shapes -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
+    <!-- Admin Login Screen -->
+    <div id="admin-login-screen" class="screen active">
+        <div class="login-card glass-panel">
+            <div class="login-header">
+                <div class="logo-icon"><i class="fa-solid fa-robot"></i></div>
+                <h2>Admin Portal</h2>
+                <p>Secure access for platform administrators</p>
+            </div>
+            
+            <form id="admin-login-form">
+                <div class="input-group">
+                    <i class="fa-solid fa-user icon"></i>
+                    <input type="text" id="admin-username" placeholder="Username" autocomplete="username" required />
+                </div>
+                <div class="input-group">
+                    <i class="fa-solid fa-lock icon"></i>
+                    <input type="password" id="admin-password" placeholder="Password" autocomplete="current-password" required />
+                </div>
+                
+                <button type="submit" class="primary-btn pulse-glow">Authenticate <i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+            <div id="login-error" class="error-msg"></div>
+        </div>
+    </div>
+
+    <!-- Admin Dashboard Screen -->
+    <div id="admin-dashboard-screen" class="screen" style="display: none;">
+        
+        <!-- Sidebar -->
+        <aside class="sidebar glass-panel">
+            <div class="sidebar-header">
+                <div class="logo-icon small"><i class="fa-solid fa-robot"></i></div>
+                <h2 class="gradient-text">AI Admin</h2>
+            </div>
+            <ul class="nav-links">
+                <li class="active"><i class="fa-solid fa-chart-pie"></i> Overview</li>
+            </ul>
+            
+            <div class="sidebar-footer">
+                <button id="logout-btn" class="logout-btn"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <div class="header-titles">
+                    <h1>Dashboard Overview</h1>
+                    <p>Real-time analytics and interview tracking</p>
+                </div>
+                <div class="header-user glass-panel">
+                    <img src="https://ui-avatars.com/api/?name=Admin&background=random&color=fff" alt="Admin" class="avatar">
+                    <span>Administrator</span>
+                </div>
+            </header>
+
+            <!-- Stats -->
+            <div class="stats-container">
+                <div class="stat-card glass-panel gradient-border-blue">
+                    <div class="stat-icon-wrap blue-glow">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Total Candidates</h3>
+                        <p id="stat-total" class="counter">0</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card glass-panel gradient-border-green">
+                    <div class="stat-icon-wrap green-glow">
+                        <i class="fa-solid fa-user-check"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Hired</h3>
+                        <p id="stat-hired" class="counter">0</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card glass-panel gradient-border-red">
+                    <div class="stat-icon-wrap red-glow">
+                        <i class="fa-solid fa-user-xmark"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Not Hired</h3>
+                        <p id="stat-nothired" class="counter">0</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Table -->
+            <div class="data-table-container glass-panel">
+                <div class="table-header">
+                    <h2>Interview Results</h2>
+                    <button id="refresh-btn" class="secondary-btn"><i class="fa-solid fa-rotate-right"></i> Refresh Data</button>
+                </div>
+                
+                <div class="table-scroll-wrapper">
+                    <table class="results-table">
+                        <thead>
+                            <tr>
+                                <th>Candidate ID</th>
+                                <th>Name</th>
+                                <th>Score</th>
+                                <th>Status</th>
+                                <th>Date & Time</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="results-table-body">
+                            <!-- Data injected by JS -->
+                        </tbody>
+                    </table>
+                </div>
+                <div id="no-data-msg" class="no-data" style="display: none;">
+                    <div class="no-data-icon"><i class="fa-solid fa-folder-open"></i></div>
+                    <p>No interview records found.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
